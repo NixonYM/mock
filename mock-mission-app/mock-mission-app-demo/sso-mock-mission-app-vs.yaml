@@ -1,0 +1,15 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: mission
+spec:
+  gateways:
+  - istio-system/public
+  hosts:
+  - authdemo.bigbang.dev
+  http:
+  - route:
+    - destination:
+         host: podinfo
+         port:
+            number: 9898

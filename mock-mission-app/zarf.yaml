@@ -1,0 +1,28 @@
+kind: ZarfPackageConfig
+metadata:
+  name: microservices-demo
+  description: "Deploy boutique with istio"
+  architecture: amd64
+
+components:
+  - name: microservices-demo
+    required: true
+    manifests:
+      - name: boutique-with-istio
+        namespace: boutique-with-istio
+        files:
+          - microservices-demo/kubernetes-manifests.yaml  
+    images:
+      - gcr.io/google-samples/microservices-demo/emailservice:v0.7.0
+      - gcr.io/google-samples/microservices-demo/checkoutservice:v0.7.0
+      - gcr.io/google-samples/microservices-demo/recommendationservice:v0.7.0
+      - gcr.io/google-samples/microservices-demo/frontend:v0.7.0
+      - gcr.io/google-samples/microservices-demo/paymentservice:v0.7.0
+      - gcr.io/google-samples/microservices-demo/productcatalogservice:v0.7.0
+      - gcr.io/google-samples/microservices-demo/cartservice:v0.7.0
+      - gcr.io/google-samples/microservices-demo/loadgenerator:v0.7.0
+      - gcr.io/google-samples/microservices-demo/currencyservice:v0.7.0
+      - gcr.io/google-samples/microservices-demo/shippingservice:v0.7.0
+      - docker.io/busybox:1.36      
+      - docker.io/redis:alpine
+      - gcr.io/google-samples/microservices-demo/adservice:v0.7.0

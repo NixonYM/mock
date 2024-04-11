@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  jkop-message-queue-demo-app:
+    image: jkop-message-queue-demo-app:0.0.1-SNAPSHOT
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_RABBITMQ_HOST=localhost
+      - SPRING_RABBITMQ_PORT=5672
+    env_file:
+      - dev.jvm.conf
+

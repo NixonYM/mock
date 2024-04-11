@@ -1,0 +1,6 @@
+spec:
+  template:
+    metadata:
+      labels:
+        protect: keycloak
+

@@ -1,0 +1,11 @@
+neuvector:
+  enabled: false
+
+monitoring:
+  sso:
+    enabled: true
+    grafana:
+      client_id: dev_00eb8904-5b88-4c68-ad67-cec0d2e07aa6_grafana
+      client_secret: CLIENT-SECRET-PLACEHOLDER
+      scopes: "openid Grafana"
+

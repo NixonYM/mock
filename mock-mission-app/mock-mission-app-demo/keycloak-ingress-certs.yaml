@@ -1,0 +1,39 @@
+istio:
+  gateways:
+    public:
+      tls:
+        -----BEGIN PRIVATE KEY-----
+        -----END PRIVATE KEY-----
+      cert: |
+        -----BEGIN CERTIFICATE-----
+        -----END CERTIFICATE-----
+        -----BEGIN CERTIFICATE-----
+        -----END CERTIFICATE-----
+        -----BEGIN CERTIFICATE-----
+        -----END CERTIFICATE-----
+addons:
+  keycloak:
+    ingress:
+      key: |
+        -----BEGIN PRIVATE KEY-----
+        -----END PRIVATE KEY-----
+      cert: |
+        -----BEGIN CERTIFICATE-----
+        -----END CERTIFICATE-----
+        -----BEGIN CERTIFICATE-----
+        -----END CERTIFICATE-----
+        -----BEGIN CERTIFICATE-----
+        -----END CERTIFICATE-----
+  vault:
+    ingress:
+      key: |
+        -----BEGIN PRIVATE KEY-----
+        -----END PRIVATE KEY-----
+      cert: |
+        -----BEGIN CERTIFICATE-----
+        -----END CERTIFICATE-----
+        -----BEGIN CERTIFICATE-----
+        -----END CERTIFICATE-----
+        -----BEGIN CERTIFICATE-----
+        -----END CERTIFICATE-----
+
